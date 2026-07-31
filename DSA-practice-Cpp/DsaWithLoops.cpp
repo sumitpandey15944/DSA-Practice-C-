@@ -205,7 +205,7 @@
 // }
 
 
-//----------> to print continious no like 1 2 3 4 5 6 7 8 9 10  by using for loops
+// //----------> to print continious no like 1 2 3 4 5 6 7 8 9 10  by using for loops
 
 
 // #include<iostream>
@@ -291,6 +291,139 @@
 // --->  printing number in triangle formate usinng for loop
 
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"enter the value of n";
+//     cin>>n;
+    
+//     for( int i=0; i<n; i++){
+//         for(int j=0; j<i+1; j++){
+//             cout<<j+1;
+//         }cout<<endl;
+//     }
+// }
+
+// -----------> print a reveerse triangle number using for loop
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"enter the value of n:";
+//     cin>>n;
+
+//     for(int i=0; i<n; i++){
+//         for(int j=1+i; j>0; j--){
+//             cout<<j;
+//         }cout<<endl;
+//     }
+// }
+
+
+// ------> floyd's triangle pattern printing no using for loop
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"enter the value of n:";
+//     cin>>n;
+
+//     int no=1;
+//     for(int i=0; i<n; i++){
+//         for(int j=i+1; j>0; j--){
+//             cout<<no<<" ";
+//             no++;
+//         }
+       
+//         cout<<endl;
+//     }
+// }
+
+
+
+//------------> floyd's triangle with character 
+
+
+// #include<iostream>
+// using namespace std;
+// int main (){
+//     int n;
+//     cout<<"enter the value of n";
+//     cin>>n;
+//     char ch='A';
+//     for(int i=0; i<n; i++){
+//         for(int j=i+1; j>0; j--){
+//             cout<<ch<<" ";
+//             ch++;
+//         }cout<<endl;
+//     }
+// }
+
+
+/* -----------> Inverted triangle pattern[11111
+                                           2222
+                                            333
+                                             44
+                                              5]*/
+
+
+                                              
+                                              
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"enter the value of n";
+//     cin>>n;
+    
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<i; j++){
+//             cout<<" ";
+//         }
+//         for(int j=0; j<n-i; j++){
+//             cout<<(i+1);
+//         }cout<<endl;
+//     }
+// }
+
+
+// --------------> inverse triangle pattern of chracter 
+
+
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"enter the value of n";
+//     cin>>n;
+//     char ch='A';
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<i; j++){
+//             cout<<"_";
+//         }
+//         for(int j=0; j<n-i; j++){
+//             cout<<ch;
+            
+//         }
+//         ch+=1;
+//         cout<<endl;
+//     }
+// }
+
+
+
+// -----------> pyramid pattern of given n no
+
 #include<iostream>
 using namespace std;
 
@@ -298,10 +431,21 @@ int main(){
     int n;
     cout<<"enter the value of n";
     cin>>n;
-    
-    for( int i=0; i<n; i++){
-        for(int j=0; j<i+1; j++){
-            cout<<j+1;
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n-i-1; j++){
+            cout<<" ";
+
+        }
+        for(int j=1; j<=i+1; j++){
+            cout<<j;
+        }
+        for (int j=i; j>0; j--){
+            cout<<j;
+
         }cout<<endl;
     }
 }
+// too many concept of loop 
+
+
